@@ -73,9 +73,7 @@ export function Footer() {
             <p className="text-muted-foreground text-sm">
               © {currentYear} Aryan Jaiswal. All rights reserved.
             </p>
-            <p className="text-muted-foreground text-sm flex items-center">
-              Made with <Heart className="h-4 w-4 text-red-500 mx-1" /> using React & TypeScript
-            </p>
+
           </div>
         </div>
       </div>
