@@ -1,73 +1,65 @@
-# Welcome to your Lovable project
+# 💼 Aryan Jaiswal - Portfolio
 
-## Project info
+🚀 Welcome to my personal portfolio website!  
+Showcasing who I am, what I do, and the projects I've built with passion and purpose.
 
-**URL**: https://lovable.dev/projects/ad46dc87-a585-4dbe-9522-29510aaf712c
+🌐 **Live Website**: [Visit Here](https://chic-sawine-d00dd7.netlify.app/)
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🧑‍💻 About Me
 
-**Use Lovable**
+Hello! I'm **Aryan Jaiswal**, a B.Tech student specializing in **Artificial Intelligence and Machine Learning**.  
+I’m passionate about technology, creative problem-solving, and building meaningful projects that solve real-world problems.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ad46dc87-a585-4dbe-9522-29510aaf712c) and start prompting.
+🔎 I’m currently diving deep into:
+- Front-end Web Development
+- AI/ML Projects
+- Cloud Computing (AWS Certified Cloud Practitioner in progress)
+- Real-time collaborative applications
+- Voice and Gesture-based NLP Systems
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🚧 Features of My Portfolio
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+✅ Fully responsive and clean design  
+✅ Smooth scroll & modern UI components  
+✅ Organized project showcase with live links  
+✅ Downloadable resume  
+✅ Contact form to reach out directly  
+✅ Minimalistic color scheme and intuitive layout
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🛠️ Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Frontend**: HTML5, CSS3, JavaScript
+- **Deployment**: Netlify
+- **Design**: Clean UI principles with responsive web design
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 📂 What You’ll Find
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- 🔍 About Section — Learn more about me, my journey, and my goals
+- 💡 Projects — Featured projects with GitHub links and live previews
+- 📄 Resume — Easily downloadable in PDF format
+- 📫 Contact — A section to connect with me for collaborations or hiring
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🔗 Connect With Me
 
-**Use GitHub Codespaces**
+- 💼 [LinkedIn](https://www.linkedin.com/in/aryan-jaiswal-763)  
+- 💻 [GitHub](https://github.com/AryanJaiswal763)  
+- 📧 Email: aryanjaiswal763@gmail.com
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 📌 Note
 
-This project is built with:
+This portfolio is a live and evolving document of my learning and achievements. I regularly update it with new skills, projects, and professional experiences.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+✨ _Thanks for visiting! Feel free to explore and reach out to me._  
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/ad46dc87-a585-4dbe-9522-29510aaf712c) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
