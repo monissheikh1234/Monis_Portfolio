@@ -5,6 +5,16 @@
 /* Gaming/Tech Portfolio Design System */
 
 @layer base {
+  /* SVG rendering fixes */
+  svg {
+    shape-rendering: geometricPrecision;
+    text-rendering: optimizeLegibility;
+  }
+  
+  /* Fix for SVG path rendering issues */
+  svg path {
+    vector-effect: non-scaling-stroke;
+  }
   :root {
     /* Gaming Tech Colors - Light Mode */
     --background: 0 0% 98%;

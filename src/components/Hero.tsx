@@ -42,12 +42,12 @@ export function Hero() {
       <div className="container mx-auto px-4 py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Profile Image */}
-          <div className="flex justify-center md:order-2">
+          <div className="flex justify-center md:justify-start md:order-1">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-cyber rounded-full blur-lg opacity-50 animate-pulse" />
               <img
-                src="/lovable-uploads/9164574a-9be6-4e35-aa03-41b896ed34d1.png"
-                alt="Aryan Jaiswal"
+                src="/lovable-uploads/myphotonew.jpg"
+                alt="Monis Sheikh"
                 className="relative w-80 h-80 rounded-full object-cover neon-border shadow-neon floating"
               />
               <div className="absolute -bottom-4 -right-4 bg-accent text-accent-foreground px-4 py-2 rounded-full font-semibold shadow-neon">
@@ -57,7 +57,7 @@ export function Hero() {
           </div>
 
           {/* Content */}
-          <div className="text-center md:text-left md:order-1">
+          <div className="text-center md:text-left md:order-2">
             <Badge variant="outline" className="mb-4 neon-border">
               <span className="w-2 h-2 bg-accent rounded-full mr-2 animate-pulse" />
               Open to opportunities
@@ -65,12 +65,12 @@ export function Hero() {
             
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
               Hi, I'm{" "}
-              <span className="cyber-glow">Aryan</span>
+              <span className="cyber-glow">Monis</span>
             </h1>
             
             <div className="text-2xl md:text-3xl text-muted-foreground mb-8 h-12">
               I'm a{" "}
-              <span className="text-primary font-semibold">
+              <span className="text-primary font-semibold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                 {displayText}
                 <span className={`terminal-cursor ${isTyping ? 'opacity-100' : 'opacity-0'}`}>|</span>
               </span>
@@ -90,7 +90,7 @@ export function Hero() {
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="neon-border group" asChild>
-                <a href="https://peach-libbey-78.tiiny.site" target="_blank" rel="noopener noreferrer">
+                <a href="https://drive.google.com/file/d/1IZTsgmTV6_HdUWIFULTAyjTRXVIk5XTX/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="mr-2 h-5 w-5 group-hover:animate-pulse" />
                   View Resume
                 </a>
@@ -100,27 +100,27 @@ export function Hero() {
             {/* Social Links */}
             <div className="flex gap-4 justify-center md:justify-start">
               <Button variant="outline" size="icon" className="neon-border group" asChild>
-                <a href="https://linkedin.com/in/aryan-deepak-jaiswal-59151b31a" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/monis-mustaque-sheikh-756096276/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="h-5 w-5 group-hover:text-primary" />
                 </a>
               </Button>
               <Button variant="outline" size="icon" className="neon-border group" asChild>
-                <a href="https://github.com/AryanJaiswal763" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/monissheikh1234" target="_blank" rel="noopener noreferrer">
                   <Github className="h-5 w-5 group-hover:text-primary" />
                 </a>
               </Button>
-              <Button variant="outline" size="icon" className="neon-border group" asChild>
-                <a href="mailto:aryanjaiswal763@gmail.com">
+              {/* <Button variant="outline" size="icon" className="neon-border group" asChild>
+                <a href="mailto:monissheikh0102@gmail.com">
                   <Mail className="h-5 w-5 group-hover:text-primary" />
                 </a>
-              </Button>
+              </Button> */}
               <Button variant="outline" size="icon" className="neon-border group" asChild>
-                <a href="tel:9096509485">
+                <a href="tel:9011272753">
                   <Phone className="h-5 w-5 group-hover:text-primary" />
                 </a>
               </Button>
               <Button variant="outline" size="icon" className="neon-border group" asChild>
-                <a href="https://codolio.com/profile/aryanJaiswal" target="_blank" rel="noopener noreferrer">
+                <a href="https://codolio.com/profile/monisSheikh" target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="h-5 w-5 group-hover:text-primary" />
                 </a>
               </Button>

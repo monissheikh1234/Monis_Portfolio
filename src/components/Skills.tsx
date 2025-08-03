@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { 
@@ -30,8 +31,8 @@ const skillCategories = [
       { name: "React.js" },
       { name: "HTML/CSS" },
       { name: "Tailwind CSS" },
-      { name: "Bootstrap" },
-      { name: "Angular" }
+      { name: "Bootstrap" }
+      
     ]
   },
   {
@@ -79,22 +80,43 @@ const skillCategories = [
 
 const certifications = [
   {
-    title: "Data Structures and Algorithms",
-    provider: "Coursera",
-    description: "Arrays, Linked Lists, Trees, Graphs, Searching & Sorting, Recursion, Dynamic Programming",
-    link: "https://www.coursera.org/account/accomplishments/certificate/1VWI7QELKNDO"
+    title: "AWS Certified Cloud Practitioner",
+    provider: "AWS",
+    description: "Fundamentals of AWS Cloud, including core services, security, architecture, pricing, and support.",
+    link: ""
   },
   {
     title: "Full Stack Developer Bootcamp",
     provider: "GeeksforGeeks", 
     description: "HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB, REST APIs, Git",
-    link: "https://media.geeksforgeeks.org/courses/certificates/1c5f6a29b85345fb31f64731de008efe.pdf"
+    link: "https://media.geeksforgeeks.org/courses/certificates/7b1798160088ea260873a3f1f30aa364.pdf"
   },
   {
-    title: "Architecting Solutions on AWS",
+    title: "Zero Trust Cloud Essentials",
     provider: "Coursera",
     description: "VPC, EC2, S3, IAM, RDS, Load Balancing, Auto Scaling, CloudFront, Route 53",
-    link: "https://www.coursera.org/account/accomplishments/certificate/LIFYYO0NS8AB"
+    link: "https://verify.skilljar.com/c/pg6zzk4ohaig"
+  }
+]
+
+const moreCertifications = [
+  {
+    title: "C++ Programming Course Online - Complete Beginner to Advanced",
+    provider: "GeeksforGeeks",
+    description: "Comprehensive C++ programming from basics to advanced topics.",
+    link: "https://media.geeksforgeeks.org/courses/certificates/3570bdf35f7b548f0e1988fcb2733f21.pdf"
+  },
+  {
+    title: "Core Computer Science Subject for Interview Preparation",
+    provider: "GeeksforGeeks",
+    description: "Covers core CS subjects for interview readiness.",
+    link: "https://media.geeksforgeeks.org/courses/certificates/9f4fb89ef53dcd71aaba8e521d237f69.pdf"
+  },
+  {
+    title: "AIML Internship",
+    provider: "AICTE",
+    description: "Internship experience in AI/ML domain.",
+    link: "https://drive.google.com/file/d/1BcFuxFDQEC1u9SA0Ha4qBl-2ok9rV2-i/view?usp=sharing"
   }
 ]
 
@@ -110,6 +132,8 @@ const softSkills = [
 ]
 
 export function Skills() {
+  const [showMore, setShowMore] = useState(false)
+
   return (
     <section id="skills" className="py-20 relative">
       <div className="container mx-auto px-4">
@@ -182,6 +206,37 @@ export function Skills() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground mb-4">{cert.description}</p>
+                  {/* AWS certificate: show Coming Soon button */}
+                  {cert.title === "AWS Certified Cloud Practitioner" ? (
+                    <button
+                      className="inline-flex items-center px-4 py-2 rounded neon-border bg-transparent border-green-500 text-green-600 hover:bg-green-500 hover:text-white transition-colors"
+                      disabled
+                    >
+                      Coming Soon
+                    </button>
+                  ) : cert.link && (
+                    <a 
+                      href={cert.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-sm text-primary hover:text-accent transition-colors"
+                    >
+                      <BookOpen className="mr-2 h-4 w-4" />
+                      View Certificate
+                    </a>
+                  )}
+                </CardContent>
+              </Card>
+            ))}
+            {/* Show more certifications if toggled */}
+            {showMore && moreCertifications.map((cert, index) => (
+              <Card key={cert.title} className="bg-card/50 backdrop-blur-sm neon-border group hover:scale-105 transition-all duration-300">
+                <CardHeader>
+                  <CardTitle className="text-lg text-primary">{cert.title}</CardTitle>
+                  <p className="text-sm text-muted-foreground font-medium">{cert.provider}</p>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground mb-4">{cert.description}</p>
                   <a 
                     href={cert.link}
                     target="_blank"
@@ -194,6 +249,14 @@ export function Skills() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+          <div className="flex justify-center mt-6">
+            <button
+              className="px-6 py-2 rounded neon-border bg-card/70 text-primary font-semibold hover:bg-primary hover:text-background transition-colors"
+              onClick={() => setShowMore((prev) => !prev)}
+            >
+              {showMore ? "Show Less" : "See More"}
+            </button>
           </div>
         </div>
       </div>

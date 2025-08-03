@@ -47,14 +47,14 @@ export function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "aryanjaiswal763@gmail.com",
-      href: "mailto:aryanjaiswal763@gmail.com"
+              value: "monissheikh0102@gmail.com",
+        href: "mailto:monissheikh0102@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+91 9096509485",
-      href: "tel:+919096509485"
+      value: "+91 9011272753",
+      href: "tel:+919011272753"
     },
     {
       icon: MapPin,
@@ -68,19 +68,19 @@ export function Contact() {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/aryan-deepak-jaiswal-59151b31a",
+              href: "https://www.linkedin.com/in/monis-mustaque-sheikh-756096276/",
       color: "hover:text-blue-400"
     },
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/AryanJaiswal763",
+              href: "https://github.com/monissheikh1234",
       color: "hover:text-gray-400"
     },
     {
       icon: ExternalLink,
       label: "Codolio",
-      href: "https://codolio.com/profile/aryanJaiswal",
+              href: "https://codolio.com/profile/monissheikh1234",
       color: "hover:text-green-400"
     }
   ]

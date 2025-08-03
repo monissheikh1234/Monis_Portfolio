@@ -10,7 +10,7 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold cyber-glow mb-4">ARYAN.DEV</h3>
+                            <h3 className="text-2xl font-bold cyber-glow mb-4">MONIS.DEV</h3>
             <p className="text-muted-foreground max-w-sm">
               Building innovative solutions with AI/ML and full-stack development. 
               Let's create something amazing together.
@@ -43,23 +43,23 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-primary">Connect</h4>
             <div className="space-y-2 mb-4">
-              <p className="text-muted-foreground">aryanjaiswal763@gmail.com</p>
-              <p className="text-muted-foreground">+91 9096509485</p>
+                              <p className="text-muted-foreground">monissheikh0102@gmail.com</p>
+                              <p className="text-muted-foreground">+91 9011272753</p>
               <p className="text-muted-foreground">Nagpur, India</p>
             </div>
             <div className="flex gap-2">
               <Button variant="outline" size="icon" className="neon-border group" asChild>
-                <a href="https://linkedin.com/in/aryan-deepak-jaiswal-59151b31a" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/monis-mustaque-sheikh-756096276/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="h-4 w-4 group-hover:text-primary" />
                 </a>
               </Button>
               <Button variant="outline" size="icon" className="neon-border group" asChild>
-                <a href="https://github.com/AryanJaiswal763" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/monissheikh1234" target="_blank" rel="noopener noreferrer">
                   <Github className="h-4 w-4 group-hover:text-primary" />
                 </a>
               </Button>
               <Button variant="outline" size="icon" className="neon-border group" asChild>
-                <a href="mailto:aryanjaiswal763@gmail.com">
+                <a href="mailto:monissheikh0102@gmail.com">
                   <Mail className="h-4 w-4 group-hover:text-primary" />
                 </a>
               </Button>
@@ -71,7 +71,7 @@ export function Footer() {
         <div className="pt-8 border-t border-primary/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-muted-foreground text-sm">
-              © {currentYear} Aryan Jaiswal. All rights reserved.
+              © {currentYear} Monis Sheikh. All rights reserved.
             </p>
 
           </div>

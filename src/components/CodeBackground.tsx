@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 const codeSnippets = [
-  "const portfolio = new Developer('Aryan Jaiswal');",
+      "const portfolio = new Developer('Monis Sheikh');",
   "function innovate() { return creativity + code; }",
   "class AIMLStudent extends Engineer {",
   "  constructor() { super('problemSolver'); }",
@@ -10,11 +10,11 @@ const codeSnippets = [
   "if (passion === coding) { return success; }",
   "async function buildFuture() {",
   "const skills = [...frontend, ...backend, ...ai];",
-  "export default AryanJaiswal;",
+      "export default MonisSheikh;",
   "npm install future-tech",
   "git commit -m 'Added innovation'",
-  "docker run --name aryan-portfolio",
-  "SELECT * FROM achievements WHERE student='Aryan';",
+      "docker run --name monis-portfolio",
+      "SELECT * FROM achievements WHERE student='Monis';",
   "machine_learning.predict(career_success);",
   "console.log('Building tomorrow today');",
 ]

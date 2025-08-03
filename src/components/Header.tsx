@@ -39,7 +39,7 @@ export function Header() {
               <Terminal className="h-8 w-8 text-primary neon-glow" />
               <Code2 className="absolute -top-1 -right-1 h-4 w-4 text-accent animate-pulse" />
             </div>
-            <span className="text-xl font-bold cyber-glow">ARYAN.DEV</span>
+                            <span className="text-xl font-bold cyber-glow">MONIS.DEV</span>
           </div>
 
           {/* Desktop Navigation */}

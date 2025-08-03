@@ -1,13 +1,15 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { GraduationCap, Award, Target, Brain } from "lucide-react"
+import { ErrorBoundary } from "./ErrorBoundary"
+import { SafeIcon } from "./SafeIcon"
 
 export function About() {
   const achievements = [
-    { icon: GraduationCap, title: "CGPA 9.02", desc: "BTech AI/ML" },
-    { icon: Award, title: "HSC 84.17%", desc: "12th Grade" },
-    { icon: Target, title: "SSC 92.40%", desc: "10th Grade" },
-    { icon: Brain, title: "3+ Projects", desc: "Major Projects" }
+    { icon: GraduationCap, title: "CGPA 8.90", desc: "BTech AI/ML" },
+    { icon: Award, title: "HSC 75%", desc: "12th Grade" },
+    { icon: Target, title: "SSC 89.80%", desc: "10th Grade" },
+    { icon: Brain, title: "2 Projects", desc: "Major Projects" }
   ]
 
   return (
@@ -29,22 +31,19 @@ export function About() {
               <CardContent className="p-0">
                 <h3 className="text-2xl font-bold mb-4 text-gradient-cyber">My Journey</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  I'm a final year student at Shri Ramdeobaba College of Engineering and Management, 
-                  pursuing BTech specializing in AI/ML. With a strong foundation in both theoretical 
-                  concepts and practical implementation, I've developed a passion for creating 
-                  innovative solutions that bridge the gap between technology and real-world problems.
+                I am a passionate and driven engineering student with a strong foundation in software development, artificial intelligence, and full-stack web technologies. I enjoy building impactful solutions, from AI-powered medical platforms to smart hardware systems, and have demonstrated my abilities through national-level hackathons and real-world projects. With a blend of technical expertise, creative problem-solving, and a continuous learning mindset, I aim to contribute meaningfully to innovative teams and create technology that improves lives.
                 </p>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                {/* <p className="text-muted-foreground mb-6 leading-relaxed">
                   My expertise spans across full-stack development, machine learning, and cloud 
                   technologies. I'm particularly interested in building AI-powered applications 
                   that can make a meaningful impact in healthcare, e-commerce, and user experience.
-                </p>
+                </p> */}
                 
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="outline" className="neon-border">Problem Solver</Badge>
                   <Badge variant="outline" className="neon-border">Team Leader</Badge>
                   <Badge variant="outline" className="neon-border">Quick Learner</Badge>
-                  <Badge variant="outline" className="neon-border">Public Speaker</Badge>
+                  <Badge variant="outline" className="neon-border">Positive Attitude</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -55,7 +54,10 @@ export function About() {
             {achievements.map((achievement, index) => (
               <Card key={index} className="bg-card/50 backdrop-blur-sm neon-border p-6 text-center group hover:scale-105 transition-transform duration-300">
                 <CardContent className="p-0">
-                  <achievement.icon className="h-12 w-12 text-primary mx-auto mb-4 group-hover:text-accent transition-colors" />
+                  <SafeIcon 
+                    icon={achievement.icon} 
+                    className="h-12 w-12 text-primary mx-auto mb-4 group-hover:text-accent transition-colors" 
+                  />
                   <h4 className="text-xl font-bold mb-2">{achievement.title}</h4>
                   <p className="text-muted-foreground text-sm">{achievement.desc}</p>
                 </CardContent>
@@ -76,7 +78,7 @@ export function About() {
                   <div>
                     <h4 className="text-xl font-bold text-primary">B.Tech - Computer Science and Engineering (AI/ML)</h4>
                     <p className="text-muted-foreground">Shri Ramdeobaba College of Engineering and Management</p>
-                    <p className="text-sm text-muted-foreground">CGPA: 9.02</p>
+                    <p className="text-sm text-muted-foreground">CGPA: 8.90</p>
                   </div>
                   <Badge variant="outline" className="neon-border mt-2 md:mt-0">2022 - 2026</Badge>
                 </div>
@@ -88,10 +90,10 @@ export function About() {
                 <div className="flex flex-col md:flex-row md:items-center justify-between">
                   <div>
                     <h4 className="text-xl font-bold text-primary">Higher Secondary Certificate (HSC)</h4>
-                    <p className="text-muted-foreground">Shri Mohanlal Rughwani Sindhi Hindi High School and Jr College</p>
-                    <p className="text-sm text-muted-foreground">Percentage: 84.17%</p>
+                    <p className="text-muted-foreground">Bhalerao Junior Science College</p>
+                    <p className="text-sm text-muted-foreground">Percentage: 75%</p>
                   </div>
-                  <Badge variant="outline" className="neon-border mt-2 md:mt-0">2022</Badge>
+                  <Badge variant="outline" className="neon-border mt-2 md:mt-0">2020</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -101,10 +103,10 @@ export function About() {
                 <div className="flex flex-col md:flex-row md:items-center justify-between">
                   <div>
                     <h4 className="text-xl font-bold text-primary">Secondary School Certificate (SSC)</h4>
-                    <p className="text-muted-foreground">St. John's High School</p>
-                    <p className="text-sm text-muted-foreground">Percentage: 92.40%</p>
+                    <p className="text-muted-foreground">Nagar Parishad HighSchool Saoner</p>
+                    <p className="text-sm text-muted-foreground">Percentage: 89.80%</p>
                   </div>
-                  <Badge variant="outline" className="neon-border mt-2 md:mt-0">2020</Badge>
+                  <Badge variant="outline" className="neon-border mt-2 md:mt-0">2018</Badge>
                 </div>
               </CardContent>
             </Card>
