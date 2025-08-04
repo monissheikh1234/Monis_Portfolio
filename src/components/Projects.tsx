@@ -112,7 +112,7 @@ const dsaProjects = [
       "Professional formatting"
     ],
     tech: ["C++", "File I/O", "Data Structures", "Object-Oriented Programming"],
-    github: "https://github.com/monissheikh1234/Resume_creator_cpp",
+    github: "https://github.com/monissheikh1234/CPP_PROJECTS_REPOSITORY/tree/main/Resume_creator_cpp",
     demo: "/", // demo removed
     featured: true
   },
@@ -126,7 +126,7 @@ const dsaProjects = [
       "Cross-platform compatibility"
     ],
     tech: ["C++", "Compression Algorithms", "Data Structures", "Binary I/O"],
-    github: "https://github.com/monissheikh1234/file_compressor",
+    github: "https://github.com/monissheikh1234/CPP_PROJECTS_REPOSITORY/tree/main/file_compressor",
     demo: "/", // demo removed
     featured: false
   },
@@ -140,7 +140,7 @@ const dsaProjects = [
       "Data management"
     ],
     tech: ["C++", "Data Structures", "File Management", "Business Logic"],
-    github: "https://github.com/monissheikh1234/supermarket_billing.cpp",
+    github: "https://github.com/monissheikh1234/CPP_PROJECTS_REPOSITORY/tree/main/supermarket_billing.cpp",
     demo: "/", // demo removed
     featured: false
   }
