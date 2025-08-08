@@ -90,7 +90,7 @@ export function Hero() {
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="neon-border group" asChild>
-                <a href="https://drive.google.com/file/d/1xJx14EiJ5BfL1nvTjv9G8t6xempU7CHg/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <a href="https://drive.google.com/file/d/1-H7YBAoEixzqkvUNMEyyUeMY_4IERo1q/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="mr-2 h-5 w-5 group-hover:animate-pulse" />
                   View Resume
                 </a>
